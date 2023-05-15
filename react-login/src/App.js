@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Auth from "./components/Auth";
+import Week from "./components/Week";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -37,6 +38,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Auth />} />
+            <Route path="/week" element={<Week />} />
           </Routes>
         </BrowserRouter>
       </main>
