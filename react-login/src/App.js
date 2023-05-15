@@ -4,6 +4,7 @@ import Auth from "./components/Auth";
 import Week from "./components/Week";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Portfolio from "./components/Portfolio/Portfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -39,6 +40,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Auth />} />
             <Route path="/week" element={<Week />} />
+            <Route path="Portfolio" element={<Portfolio />} />
           </Routes>
         </BrowserRouter>
       </main>
